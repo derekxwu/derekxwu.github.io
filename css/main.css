@@ -21,14 +21,8 @@ textarea {
 	background: #FF8B4D;
 }
 
-html {
-	background: #F0DBDB;
-
-	font-size: 16px;
-	line-height: 1.4;
-}
-
 body {
+	background: #F0DBDB;
 	font: 16px/1.625 sans-serif;
 	font: 15px/1.625 Arial;
 	font: 16px/1.625 source-sans-pro;

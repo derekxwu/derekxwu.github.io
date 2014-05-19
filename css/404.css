@@ -1,0 +1,49 @@
+::selection {
+	background: #FF8B4D;
+}
+::-moz-selection {
+	background: #FF8B4D;
+}
+
+body {
+	color: #222;
+	background: #F0DBDB;
+	font-family: sans-serif;
+	font-family: Arial;
+	font-family: source-sans-pro;
+}
+
+a {
+	text-decoration: none;
+	color: #ca61ff;
+}
+
+a:hover,
+a:active,
+a:focus {
+	background: #E2BBBB;
+}
+
+.video-container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: auto;
+}
+video {
+	width: 100%;
+	height: auto;
+}
+#sauce {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 32px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: hsla(0,100%,100%, 0.7);
+}
+
+.main p {
+	font-size: 24px;
+}
