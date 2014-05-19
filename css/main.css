@@ -110,16 +110,6 @@ nav a {
 	border-bottom: solid 5px #A219E6;
 }
 
-nav a:hover,
-nav a:active,
-nav a:focus {
-	color: #222;
-}
-
-nav a:visited {
-	color: #222;
-}
-
 /* ==============
 	MOBILE: Main
    ============== */
@@ -174,11 +164,11 @@ article h2 {
 
 #twitter {
 	background: #55acee;
+	/* Twitter blue */
 }
 
 .footer-container {
 	padding-top: 0.25em;
-	color: #222;
 }
 
 .footer-container h3 {
@@ -214,6 +204,16 @@ article h2 {
 }
 
 @media only screen and (min-width: 768px) {
+
+/* ====================
+	WIDE: Bigger stuff
+   ==================== */
+
+   body {
+	font: 18px/1.625 sans-serif;
+	font: 17px/1.625 Arial;
+	font: 18px/1.625 source-sans-pro;
+}
 
 /* =================
 	WIDE: Indenting
