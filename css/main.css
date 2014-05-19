@@ -14,13 +14,6 @@ textarea {
 	color: #222;
 }
 
-html {
-	background: #F0DBDB;
-
-	font-size: 16px;
-	line-height: 1.4;
-}
-
 ::selection {
 	background: #FF8B4D;
 }
@@ -28,9 +21,12 @@ html {
 	background: #FF8B4D;
 }
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
+html {
+	background: #F0DBDB;
+
+	font-size: 16px;
+	line-height: 1.4;
+}
 
 body {
 	font: 16px/1.625 sans-serif;
@@ -43,13 +39,22 @@ a {
 	color: #ca61ff;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus {
 	background: #E2BBBB;
 }
 
 strong {
 	font-weight: bold;
 	font-size: 1.1em;
+}
+
+code {
+	font-family: source-code-pro;
+	background: #eee;
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: .625em;
 }
 
-.header-container a:hover {
+.header-container a:hover,
+.header-container a:active,
+.header-container a:focus {
 	background: #A219E6;
 }
 
@@ -71,7 +78,9 @@ h1, h2, h3, h4, h5, h6 {
 	border-top: solid 5px #c16c6c;
 }
 
-.footer-container a:hover {
+.footer-container a:hover,
+.footer-container a:active,
+.footer-container a:focus {
 	background: #F0DBDB;
 }
 
@@ -107,7 +116,9 @@ nav a {
 	border-bottom: solid 5px #A219E6;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active,
+nav a:focus {
 	color: #222;
 }
 
@@ -136,8 +147,48 @@ article h2 {
 	font-size: 1.3em;
 }
 
-.footer-container footer {
+#social > a:hover,
+#social > a:active,
+#social > a:focus {
+	background: none;
+}
+
+.social_logo:hover,
+.social_logo:active,
+.social_logo:focus {
+	-webkit-box-shadow: 0 0 2px 2px orange;
+	        box-shadow: 0 0 2px 2px orange;
+}
+.social_logo {
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin-right: 5px;
+}
+
+.social_logo img, .social_logo p {
+	/* Is there no fancy 2014 tech for centering blocks? */
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#twitter {
+	background: #55acee;
+}
+
+.footer-container {
+	padding-top: 0.25em;
 	color: #222;
+}
+
+.footer-container h3 {
+	font-size: 1.2em;
 }
 
 /* ==========================================================================
@@ -151,19 +202,8 @@ article h2 {
    ==================== */
 
 	nav a {
-		float: left;
-		width: 27%;
-		margin: 0 1.7%;
-		padding: 25px 2%;
-		margin-bottom: 0;
-	}
-
-	nav li:first-child a {
-		margin-left: 0;
-	}
-
-	nav li:last-child a {
-		margin-right: 0;
+		width: 95px;
+		margin-right: 5px;
 	}
 
 /* ========================
@@ -181,27 +221,21 @@ article h2 {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-	WIDE: CSS3 Effects
-   ==================== */
+/* =================
+	WIDE: Indenting
+   ================= */
+   .header-container,
+   .main-container,
+   .footer-container {
+   	padding-left: 10%;
+   }
 
+/* ==============
+	WIDE: Header
+   ============== */
 	.header-container {
-		-webkit-box-shadow: 0 5px 10px #aaa;
-		   -moz-box-shadow: 0 5px 10px #aaa;
-				box-shadow: 0 5px 10px #aaa;
-	}
-
-/* ============
-	WIDE: Menu
-   ============ */
-
-	.title {
-		float: left;
-	}
-
-	nav {
-		float: right;
-		width: 38%;
+		margin-top: 2em;
+		border-top: solid 5px #c16c6c;
 	}
 
 /* ============
@@ -209,20 +243,11 @@ article h2 {
    ============ */
 
 	.main article {
-		float: left;
-		width: 57%;
+		width: 80%;
+		max-width: 860px;
 	}
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-	Maximal Width
-   =============== */
-
-	.wrapper {
-		width: 1026px; /* 1140px - 10% for margins */
-		margin: 0 auto;
+	.main li {
+		margin-left: 25px;
 	}
 }
 
@@ -234,7 +259,8 @@ article h2 {
 	margin: 0 5%;
 }
 
-.clearfix:before,
+/* No float, no clearfix */
+/*.clearfix:before,
 .clearfix:after {
 	content: " ";
 	display: table;
@@ -246,4 +272,4 @@ article h2 {
 
 .clearfix {
 	*zoom: 1;
-}
+}*/
