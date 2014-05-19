@@ -1,11 +1,7 @@
-::selection {
-	background: #FF8B4D;
-}
-::-moz-selection {
-	background: #FF8B4D;
-}
-
-body {
+html, body {
+	width: 100%;
+	height: 100%;
+	
 	color: #222;
 	background: #F0DBDB;
 	font-family: sans-serif;
@@ -20,30 +16,41 @@ a {
 
 a:hover,
 a:active,
-a:focus {
-	background: #E2BBBB;
-}
+a:focus { background: #E2BBBB; }
 
 .video-container {
 	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	height: auto;
 }
+
 video {
+	display: block;
 	width: 100%;
-	height: auto;
+	max-height: 100%;
 }
+
 #sauce {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 32px;
-	overflow: hidden;
+	
 	white-space: nowrap;
+	overflow: hidden;	
+	font-size: 32px;
 	background: hsla(0,100%,100%, 0.7);
 }
 
-.main p {
+.fail {
+	margin-top: 50%;
+	font-size: 60px;
+	text-align: center;
+}
+
+p {
+	width: 100%;
+
+    text-align: center;
 	font-size: 24px;
 }
+
+::selection { background: #FF8B4D; }
+::-moz-selection { background: #FF8B4D; }
