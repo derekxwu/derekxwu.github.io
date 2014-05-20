@@ -1,14 +1,20 @@
 var rootFolderString = "https://dl.dropboxusercontent.com/u/5586777/404_data/"
 var webmTable = [
-    ["ha-ha-ha.webm", "http://www.nicovideo.jp/watch/sm22237296"],
-    ["mitchirineko-march.webm", "https://www.youtube.com/watch?v=lAIGb1lfpBw"],
-    ["boot-to-the-head.webm", "https://www.youtube.com/watch?v=vFldBVWFgWo"],
-    ["det.swf.webm", "http://www.nicovideo.jp/watch/sm22028311"],
-    ["love-the-way-you-move.webm", "https://www.youtube.com/watch?v=Wga5A6R9BJg"],
-    ["me_lo_rin.webm", "http://www.nicovideo.jp/watch/sm21609471"],
-    ["moses-supposes.webm", "http://vimeo.com/74621649"],
-    ["oh-oh-oh.webm", "http://www.nicovideo.jp/watch/sm21895373"],
-    ["who-put-the-bomp.webm", "http://www.nicovideo.jp/watch/sm4538955"]
+    ["ha-ha-ha", "http://www.nicovideo.jp/watch/sm22237296"],
+    ["mitchirineko-march", "https://www.youtube.com/watch?v=lAIGb1lfpBw"],
+    ["boot-to-the-head", "https://www.youtube.com/watch?v=vFldBVWFgWo"],
+    ["det.swf", "http://www.nicovideo.jp/watch/sm22028311"],
+    ["love-the-way-you-move", "https://www.youtube.com/watch?v=Wga5A6R9BJg"],
+    ["me_lo_rin", "http://www.nicovideo.jp/watch/sm21609471"],
+    ["moses-supposes", "http://vimeo.com/74621649"],
+    ["oh-oh-oh", "http://www.nicovideo.jp/watch/sm21895373"],
+    ["acquiring-business", "https://www.youtube.com/watch?v=k_d5jWvBirU"],
+    ["when-I-am-chief-prosecutor-in-crimea", "https://www.youtube.com/watch?v=m1ZWmHGCcEQ"],
+    ["bears-bears-bears", "https://www.youtube.com/watch?v=phnv3qwZKAo"],
+    ["attack-on-kids", "https://www.youtube.com/watch?v=eqnNyAP_yFI"],
+    ["no-it-cant-be-true", "https://www.youtube.com/watch?v=h5825Wu0WjA"],
+    ["taco-circulation", "https://www.youtube.com/watch?v=2vXmGyu3aUs"],
+    ["who-put-the-bomp", "http://www.nicovideo.jp/watch/sm4538955"]
 ];
 
 (function(a) {
@@ -20,7 +26,7 @@ $(document).ready(function() {
     var rand = Math.floor(Math.random() * webmTable.length);
     $("#back").attr("href", document.referrer);
     if (!$.browser.mobile) {
-        $(".video-container").prepend("<video controls loop autoplay><source src='" + rootFolderString + webmTable[rand][0] + "'type='video/webm'></video>");
+        $(".video-container").prepend("<video controls loop autoplay><source src='" + rootFolderString + webmTable[rand][0] + ".webm' type='video/webm'></video>");
         $("#sauce").html("Source: <a href='" + webmTable[rand][1] + "'>" + webmTable[rand][1] + "</a>");
         $(".fail").remove();
         $("p").css("position", "absolute");

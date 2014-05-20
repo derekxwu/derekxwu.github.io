@@ -68,18 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: #A219E6;
 }
 
-.footer-container {
-	border-top: solid 5px #c16c6c;
-}
-
-.footer-container a:hover,
-.footer-container a:active,
-.footer-container a:focus {
-	background: #F0DBDB;
-}
-
-.header-container,
-.footer-container {
+.header-container {
 	background: #e2bbbb;
 	border-bottom: solid 5px #c16c6c;
 }
@@ -131,6 +120,11 @@ article h2 {
 	font-size: 1.3em;
 }
 
+/* TODO: Find a cleaner way to get the box-shadow without the <a> background */
+#social > a {
+	display: inline-block;
+}
+
 #social > a:hover,
 #social > a:active,
 #social > a:focus {
@@ -140,21 +134,22 @@ article h2 {
 .social_logo:hover,
 .social_logo:active,
 .social_logo:focus {
-	-webkit-box-shadow: 0 0 2px 2px orange;
-	        box-shadow: 0 0 2px 2px orange;
+	-webkit-box-shadow: 0 0 1px 3px orange;
+	box-shadow: 0 0 1px 3px orange;
 }
+
 .social_logo {
 	position: relative;
-	display: inline-block;
+	display: block;
 	width: 70px;
 	height: 70px;
 	margin-right: 5px;
 }
 
-.social_logo img, .social_logo p {
-	/* Is there no fancy 2014 tech for centering blocks? */
+.social_logo img {
+	/* TODO: 2014 vertical alignment tech? */
 	position: absolute;
-	display: inline-block;
+	display: block;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -169,10 +164,18 @@ article h2 {
 
 .footer-container {
 	padding-top: 0.25em;
+	border-top: solid 5px #c16c6c;
+	background: #e2bbbb;
 }
 
 .footer-container h3 {
 	font-size: 1.2em;
+}
+
+.footer-container a:hover,
+.footer-container a:active,
+.footer-container a:focus {
+	background: #F0DBDB;
 }
 
 /* ==========================================================================
@@ -224,12 +227,18 @@ article h2 {
    	padding-left: 10%;
    }
 
-/* ==============
-	WIDE: Header
-   ============== */
+/* ======================
+	WIDE: Vertical space
+   ====================== */
+	/* TODO: at some point make sure this doesn't look awful on phones */
 	.header-container {
 		margin-top: 2em;
 		border-top: solid 5px #c16c6c;
+	}
+
+	.footer-container {
+		margin-bottom: 2em;
+		border-bottom: solid 5px #c16c6c;
 	}
 
 /* ============
@@ -248,6 +257,7 @@ article h2 {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 .wrapper {
 	width: 90%;
 	margin: 0 5%;
