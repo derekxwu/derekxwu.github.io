@@ -1,11 +1,3 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-/*
-Key Colors:
-
-#F0DBDB light grey background
-#FF8B4D orange highlight
-#A219E6 violet highlight
- */
 html,
 button,
 input,
@@ -22,7 +14,7 @@ textarea {
 }
 
 body {
-	background: #F0DBDB;
+	background: #f4f4f4;
 	font: 16px/1.625 sans-serif;
 	font: 15px/1.625 Arial;
 	font: 16px/1.625 source-sans-pro;
@@ -30,7 +22,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #ca61ff;
+	color: #ae59d9;
 }
 
 a:hover,
@@ -40,7 +32,6 @@ a:focus {
 }
 
 strong {
-	font-weight: bold;
 	font-size: 1.1em;
 }
 
@@ -51,110 +42,96 @@ code {
 	border-bottom: solid 2px #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-}
-/* ===================
-	ALL: Orange Theme
-   =================== */
-
-.header-container {
-	padding-bottom: .625em;
-}
-
-.header-container a:hover,
-.header-container a:active,
-.header-container a:focus {
-	background: #A219E6;
-}
-
-.header-container {
+header {
 	background: #e2bbbb;
 	border-bottom: solid 5px #c16c6c;
-}
-
-.title {
-	font-size: 2.4em;
-}
-
-.credits {
-	width: auto;
-	display: inline;
-}
-
-/* ==============
-	MOBILE: Menu
-   ============== */
-
-nav li {
-	display: inline;
+	padding-top: 1px; /* Is this for real? */
 }
 
 nav a {
-	width: 22%;
-	padding: 5px 0 0 0;
-	margin: 0 auto;
-	display: inline-block;
 	text-align: center;
-	text-decoration: none;
 	font-weight: bold;
-
 	color: #222;
 	background: #ae59d9;
-	border-bottom: solid 5px #A219E6;
+	border-bottom: solid 5px #a219e6;
+}
+nav a:hover,
+nav a:active,
+nav a:focus {
+	background: #A219E6;
 }
 
-/* ==============
-	MOBILE: Main
-   ============== */
-
-.main ul li::before {
-	content: "» ";
+footer {
+	border-top: solid 5px #c16c6c;
+	background: #e2bbbb;
+	padding-bottom: 1px; /* This is a hack for footer to reach the bottom; test it on a real phone */
 }
+	footer a:hover,
+	footer a:active,
+	footer a:focus {
+		background: #f4f4f4;
+	}
 
-.main li
-{
-	margin-left: 15px;
+
+
+/* ===============
+	Mobile first!
+   =============== */
+
+header {
+	text-align: center;
+	padding: 1px 0 10px 0;
 }
+	h1 {
+		margin: 0.25em 0;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+		nav li {
+			display: inline-block;
+			padding: 0;
+			width: 22%;
+			margin: 0 0.5% 0 0.5%;
+		}
+		nav a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
 
-article h1 {
-	font-size: 1.6em;
-}
-
-article h2 {
+h2 {
 	font-size: 1.3em;
 }
 
-/* TODO: Find a cleaner way to get the box-shadow without the <a> background */
-#social > a {
-	display: inline-block;
+main, footer {
+	padding: 0 2%;
 }
-
-#social > a:hover,
-#social > a:active,
-#social > a:focus {
-	background: none;
-}
+	main article iframe {
+		max-width: 100%;
+	}
 
 .social_logo:hover,
 .social_logo:active,
 .social_logo:focus {
-	-webkit-box-shadow: 0 0 1px 3px orange;
-	box-shadow: 0 0 1px 3px orange;
+	transform: scale(1.1);
 }
 
 .social_logo {
 	position: relative;
-	display: block;
+	display: inline-block;
 	width: 70px;
 	height: 70px;
-	margin-right: 5px;
+	margin-left: 25px;
+	margin-bottom: 0.83em;
 }
 
 .social_logo img {
-	/* TODO: 2014 vertical alignment tech? */
 	position: absolute;
 	display: block;
+	height: 100%;
+	width: auto;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -163,122 +140,50 @@ article h2 {
 }
 
 #twitter {
-	background: #55acee;
 	/* Twitter blue */
+	background: #55acee;
 }
-
-.footer-container {
-	padding-top: 0.25em;
-	border-top: solid 5px #c16c6c;
-	background: #e2bbbb;
-}
-
-.footer-container h3 {
-	font-size: 1.2em;
-}
-
-.footer-container a:hover,
-.footer-container a:active,
-.footer-container a:focus {
-	background: #F0DBDB;
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-	INTERMEDIATE: Menu
-   ==================== */
-
-	nav a {
-		width: 95px;
-		margin-right: 5px;
+	#twitter img {
+		height: 50%;
 	}
 
-/* ========================
-	INTERMEDIATE: IE Fixes
-   ======================== */
-
-	nav ul li {
-		display: inline;
-	}
-
-	.oldie nav a {
-		margin: 0 0.7%;
-	}
+ul.credits {
+	display: inline;
+	margin: 0;
+	padding: 0;
 }
 
+/* =========================================
+	The time of desktops has come to an end
+   ========================================= */
 @media only screen and (min-width: 768px) {
-
-/* ====================
-	WIDE: Bigger stuff
-   ==================== */
-
-   body {
-	font: 18px/1.625 sans-serif;
-	font: 17px/1.625 Arial;
-	font: 18px/1.625 source-sans-pro;
-}
-
-/* =================
-	WIDE: Indenting
-   ================= */
-   .header-container,
-   .main-container,
-   .footer-container {
-   	padding-left: 10%;
-   }
-
-/* ======================
-	WIDE: Vertical space
-   ====================== */
-	/* TODO: at some point make sure this doesn't look awful on phones */
-	.header-container {
-		margin-top: 2em;
-		border-top: solid 5px #c16c6c;
+	body {
+		font: 18px/1.625 sans-serif;
+		font: 17px/1.625 Arial;
+		font: 18px/1.625 source-sans-pro;
 	}
 
-	.footer-container {
-		margin-bottom: 2em;
-		border-bottom: solid 5px #c16c6c;
+	header, main, footer {
+		text-align: left;
+		padding-left: 125px;
+		padding-right: 0;
 	}
 
-/* ============
-	WIDE: Main
-   ============ */
+	nav li {
+		width: 65px;
+		margin: 0;
+	}
+	nav li:not(:first-child) {
+		margin-left: 15px;
+	}
 
-	.main article {
+	main article {
 		width: 80%;
 		max-width: 860px;
 	}
-	.main li {
-		margin-left: 25px;
+
+	footer {
+		padding-top: .83em;
+		padding-bottom: .83em;
 	}
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.wrapper {
-	width: 90%;
-	margin: 0 5%;
-}
-
-/* No float, no clearfix */
-/*.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-.clearfix {
-	*zoom: 1;
-}*/

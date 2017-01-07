@@ -1,135 +1,117 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>derekxwu | Github</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>derekxwu | Github</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-		<script src="//use.edgefonts.net/source-sans-pro;source-code-pro.js"></script>
-		<link rel="stylesheet" href="css/reset.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
+	<script src="//use.edgefonts.net/source-sans-pro;source-code-pro.js"></script>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="https://derekxwu.github.io/active-placeholder/active-placeholder.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Derek Wu</h1>
+		<nav> <!-- I don't really need these but they're too pretty to remove -->
+			<ul>
+				<li>
+					<a href="#bio">Who</a>
+				</li><li> <!-- inline-block hack -->
+					<a href="#projects">What</a>
+				</li><li>
+					<a href="#skills">How</a>
+				</li><li>
+					<a href="#social">Where</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-		<!-- 
-		Holy favicon block batman!
-		realfavicongenerator.net
-		 -->
-		 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	</head>
-	<body>
-		<!-- Header -->
-		<div class="header-container">
-			<header class="wrapper clearfix">
-				<h1 class="title">Derek Wu</h1>
-				<nav>
-					<ul>
-						<li><a href="#bio">Who</a></li>
-						<li><a href="#projects">What</a></li>
-						<li><a href="#skills">How</a></li>
-						<li><a href="#social">Where</a></li>
-					</ul>
-				</nav>
-			</header>
-		</div>
+	<main>
+		<article>
+			<section id="bio">
+				<h2>My bio</h2>
+				<p>I was born in Wisconsin and grew up in Virginia. I learned Visual Basic out of a book in 4th grade, forgot everything, and was reintroduced to programming at <a href="http://www.tjhsst.edu/">TJHSST</a>. I taught myself HTML, CSS, and JS while I was there, learning by imitation+<a href="https://developer.mozilla.org/en-US/">MDN</a> on <a href="http://bakabt.me">BakaBT</a> and <a href="http://www.reddit.com/r/web_design">reddit</a>. My senior tech project was on single-supply power amps.</p>
+				<p>I began college at <a href="http://www.virginia.edu/">UVA</a> as an electrical engineering major, later adding computer science as a double. At UVA, I've had the opportunity to take classes ranging from VLSI and computer architecture to information retrieval and smart devices. I've also been able to work on laser-treated silicon with <a href="http://www.faculty.virginia.edu/laser/">Dr. Mool Gupta</a>, <a href="http://hcdm.cs.virginia.edu:8080/ReviewMiner/querySuggestion">ReviewMiner</a> with <a href="http://www.cs.virginia.edu/~hw5x/">Hongning Wang</a>, and on a robot with HoosMining.</p>
+				<p>Currently (Jan. 2017), I'm finishing up my studies and looking for a job in the sunny, friendly SF Bay area.</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OGLio9manxA" frameborder="0" allowfullscreen></iframe>
+			</section>
 
-		<div class="main-container">
-			<div class="main wrapper clearfix">
+			<section id="projects">
+				<h2>My public projects</h2>
+				<ul>
+					<li>
+						<strong><a href="https://github.com/derekxwu/oppai-chunks">oppai-chunks</a></strong>
+						<p>A python script that uses <a href="https://github.com/Francesco149/oppai">oppai</a> to calculate the difficulty of an <a href="https://www.youtube.com/watch?v=UYNpkDrCWtA">osu! beatmap</a> throughout the song.</p>
+						<p>There's also a web app: <a href="https://rarelyupset.com/oppai/">rarelyupset.com/oppai/</a></p>
+					</li>
+					<li>
+						<strong><a href="https://derekxwu.github.io/active-placeholder/">Active Placeholder</a></strong>
+						<p>Dynamic placeholders. It looks like this: <input type="text" id="AP-demo"></p>
+						<script>
+							var ap = new ActivePlaceholder(document.getElementById('AP-demo'));
+							ap.base = '';
+							ap.placeholders = ['I', 'look', 'like', 'this'];
+							ap.start();
+						</script>
+					</li>
+					<li>
+						<strong><a href="https://github.com/derekxwu/hexchat.channel-switcher">hexchat.channel-switcher.py</a></strong>
+						<p>Unified channel switching with <code>/g</code></p>
+					</li>
+				</ul>
+			</section>
 
-				<article>
-					<!-- minibio -->
-					<header id="bio">
-						<h1>Who I am</h1>
-						<p>I was born in Wisconsin and grew up in Virginia. My first experience coding was an introductory Java course at <a href="http://www.tjhsst.edu/">TJHSST</a>. I taught myself HTML and CSS while I was there, learning by imitation from <a href="http://bakabt.me">BakaBT</a> and reading <a href="http://www.reddit.com/r/web_design">/r/web_design</a>.</p>
-						<p>I'm now an undergraduate EE major at <a href="http://www.virginia.edu/">UVA</a>.</p>
-					</header>
-					<!-- Projects -->
-					<section id="projects">
-						<h2>My projects</h2>
+			<section id="skills">
+				<h2>My skills</h2>
+				<p>I've used:</p>
+				<ul>
+					<li>Java</li>
+					<li>Python</li>
+					<li>JavaScript</li>
+					<li>C++</li>
+					<li>Electronics
 						<ul>
-							<li>
-								<strong><a href="https://github.com/derekxwu/hexchat.channel-switcher">hexchat.channel-switcher.py</a></strong>
-								<p>Easy channel switching with <code>/g</code></p>
-							</li>
-							<li>
-								<strong><a href="https://github.com/derekxwu/hexchat.np.mpc-hc">hexchat.np.mpc-hc.py</a></strong>
-								<p>Simple "Now Playing" script</p>
-							</li>
+							<li>C on embedded devices</li>
+							<li>Spin for the <a href="https://www.parallax.com/">Parallax Propellor</a></li>
+							<li><a href="http://www.ni.com/labview/">LabVIEW</a> on the <a href="http://www.ni.com/myrio/">NI myRIO</a> (I'm <a href="http://www.ni.com/services/certified_labview_associate_developers.htm?country=United-States">CLAD certified</a>)</li>
+							<li>PCB design</li>
+							<li>Oscilloscopes, function generators, power supplies, multimeters, etc.</li>
 						</ul>
-					</section>
-					<!-- Wish you had a resume -->
-					<section id="skills">
-						<h2>My skills</h2>
-						<ul>
-							<li>Rudimentary Java</li>
-							<li>Beginner's Python</li>
-							<li>Basic JavaScript</li>
-							<li>Introductory Electronics</li>
-							<li>Aegisub</li>
-							<li>Decent Sandwiches</li>
-						</ul>
-						<p>I'm working on:</p>
-						<ul>
-							<li>Python</li>
-							<li>Electric (VLSI)</li>
-						</ul>
-					</section>
-					<!-- Social -->
-					<section id="social">
-						<h2>Find me</h2>
-						<a href="https://twitter.com/rarely_upset" target="blank"><div id="twitter" class="social_logo" title="Twitter">
-							<img src="images/twitter-logo-blue.svg" height="35" width="35" alt="Twitter">
-						</div></a>
-						<a href="http://www.last.fm/user/rarely_upset" target="blank"><div id="lastfm" class="social_logo" title="Last.fm">
-							<img src="images/lastfm-icon.svg" height="70" width="70" alt="Last.fm">
-						</div></a>
-						<p>When I made this section, I was planning on having more things, but after further thought Twitter really is the only thing I want public.</p>
-					</section>
-					<section id="funny">
-						<h2>Funny things</h2>
-						<ul>
-							<li>No fun allowed :(</li>
-						</ul>
-					</section>
-				</article>
-			</div> <!-- #main -->
-		</div> <!-- #main-container -->
+					</li>
+					<li>Aegisub</li>
+				</ul>
+				<p>I'm practicing:</p>
+				<ul>
+					<li>React.js</li>
+					<li><a href="https://www.youtube.com/watch?v=QjTl_uY5jkw">Sheik</a></li>
+				</ul>
+			</section>
 
-		<div class="footer-container">
-			<footer class="wrapper">
-				<p>I used these and they were fun: <ul class="credits"><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://www.sublimetext.com/3">Sublime Text 3</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://hayakubundle.com/">Hayaku</a>, <a href="http://color.hailpixel.com/">Colordot</a>, and <a href="http://hslpicker.com/">HSL Color Picker</a>.</ul></p>
-				<h3>Derek Wu</h3>
-			</footer>
-		</div>
+			<section id="social">
+				<h2>Reach me</h2>
+				<div id="email" class="social_logo" title="Email">
+					<a href="mailto:derek.x.wu+githubio@gmail.com">
+						<img src="images/google-inbox.png" alt="Email">
+					</a>
+				</div>
+				<div id="twitter" class="social_logo" title="Twitter">
+					<a href="https://twitter.com/rarely_upset">
+						<img src="images/twitter-logo-blue.svg" alt="Twitter">
+					</a>
+				</div>
+			</section>
+		</article>
+	</main>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-		<script>
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-38071504-2');ga('send','pageview');
-		</script>
-	</body>
+
+	<footer>
+		Made with <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>
+	</footer>
+</body>
 </html>
