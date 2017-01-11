@@ -3,15 +3,20 @@ button,
 input,
 select,
 textarea {
-	color: #222;
+	color: #222222;
 }
 
+
+
 ::selection {
-	background: #FF8B4D;
+	background: #ff8b4d;
 }
+
 ::-moz-selection {
-	background: #FF8B4D;
+	background: #ff8b4d;
 }
+
+
 
 body {
 	background: #f4f4f4;
@@ -20,15 +25,17 @@ body {
 	font: 16px/1.625 source-sans-pro;
 }
 
+
+
 a {
-	text-decoration: none;
 	color: #ae59d9;
+	text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-	background: #E2BBBB;
+	background: #e2bbbb;
 }
 
 strong {
@@ -36,11 +43,13 @@ strong {
 }
 
 code {
+	background: #eeeeee;
+	border-bottom: solid 2px #ffffff;
+	border-top: solid 2px #ffffff;
 	font-family: source-code-pro;
-	background: #eee;
-	border-top: solid 2px #fff;
-	border-bottom: solid 2px #fff;
 }
+
+
 
 header {
 	background: #e2bbbb;
@@ -48,27 +57,28 @@ header {
 	padding-top: 1px; /* Is this for real? */
 }
 
-nav a {
-	text-align: center;
-	font-weight: bold;
-	color: #222;
-	background: #ae59d9;
-	border-bottom: solid 5px #a219e6;
-}
-nav a:hover,
-nav a:active,
-nav a:focus {
-	background: #A219E6;
-}
+	header nav a {
+		background: #ae59d9;
+		border-bottom: solid 5px #a219e6;
+		color: #222222;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	header nav a:hover {
+		background: #a219e6;
+	}
+
+
 
 footer {
-	border-top: solid 5px #c16c6c;
 	background: #e2bbbb;
+	border-top: solid 5px #c16c6c;
 	padding-bottom: 1px; /* This is a hack for footer to reach the bottom; test it on a real phone */
 }
-	footer a:hover,
-	footer a:active,
-	footer a:focus {
+
+	header a:hover,
+	footer a:hover {
 		background: #f4f4f4;
 	}
 
@@ -79,38 +89,55 @@ footer {
    =============== */
 
 header {
+	padding: 30px 0;
 	text-align: center;
-	padding: 1px 0 10px 0;
 }
+
 	h1 {
-		margin: 0.25em 0;
+		margin: 0;
+		vertical-align: middle;
 	}
+
+	h1 a {
+		font-size: 1.6rem;
+	}
+
 	nav ul {
 		margin: 0;
 		padding: 0;
 	}
+
 		nav li {
 			display: inline-block;
+			margin: 0 0.5% 0 0.5%;
 			padding: 0;
 			width: 22%;
-			margin: 0 0.5% 0 0.5%;
 		}
+
 		nav a {
 			display: inline-block;
-			width: 100%;
 			height: 100%;
+			width: 100%;
 		}
+
+
 
 h2 {
 	font-size: 1.3em;
 }
 
-main, footer {
+
+
+main,
+footer {
 	padding: 0 2%;
 }
+
 	main article iframe {
 		max-width: 100%;
 	}
+
+
 
 .social_logo:hover,
 .social_logo:active,
@@ -119,39 +146,44 @@ main, footer {
 }
 
 .social_logo {
-	position: relative;
 	display: inline-block;
-	width: 70px;
 	height: 70px;
-	margin-left: 25px;
-	margin-bottom: 0.83em;
+	margin-bottom: 20px;
+	margin-right: 25px;
+	position: relative;
+	width: 70px;
 }
 
-.social_logo img {
-	position: absolute;
-	display: block;
-	height: 100%;
-	width: auto;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-#twitter {
-	/* Twitter blue */
-	background: #55acee;
-}
-	#twitter img {
-		height: 50%;
+	.social_logo img {
+		bottom: 0;
+		display: block;
+		height: 100%;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: auto;
 	}
 
-ul.credits {
+	#twitter {
+		/* Twitter blue */
+		background: #55acee;
+	}
+
+		#twitter img {
+			height: 50%;
+		}
+
+
+
+.credits {
 	display: inline;
 	margin: 0;
 	padding: 0;
 }
+
+
 
 /* =========================================
 	The time of desktops has come to an end
@@ -163,27 +195,34 @@ ul.credits {
 		font: 18px/1.625 source-sans-pro;
 	}
 
-	header, main, footer {
-		text-align: left;
+	header,
+	main,
+	footer {
 		padding-left: 125px;
 		padding-right: 0;
+		text-align: left;
 	}
 
-	nav li {
-		width: 65px;
-		margin: 0;
-	}
-	nav li:not(:first-child) {
-		margin-left: 15px;
-	}
+		nav li {
+			margin: 0;
+			width: 65px;
+		}
+
+		nav li:not(:first-child) {
+			margin-left: 15px;
+		}
+
+
 
 	main article {
-		width: 80%;
 		max-width: 860px;
+		width: 80%;
 	}
 
+
+
 	footer {
-		padding-top: .83em;
-		padding-bottom: .83em;
+		padding-bottom: 15px;
+		padding-top: 15px;
 	}
 }
